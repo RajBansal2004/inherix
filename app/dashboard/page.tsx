@@ -4,9 +4,9 @@ import ActivityLogs from "@/components/dashboard/ActivityLogs";
 import VerificationStatus from "@/components/dashboard/VerificationStatus";
 import QuickActions from "@/components/dashboard/QuickActions";
 import GovernanceSection from "@/components/dashboard/GovernanceSection";
-import BackupExport from "@/components/dashboard/BackupExport";
 import EmergencyStatus from "@/components/dashboard/EmergencyStatus";
 import AuditActivity from "@/components/dashboard/AuditActivity";
+import BackupExport from "@/components/dashboard/BackupExport";
 
 export default function DashboardPage() {
   return (
@@ -16,9 +16,7 @@ export default function DashboardPage() {
 
       <OverviewCards />
 
-      {/* STATUS ROW */}
-
-      <div className="grid gap-6 xl:grid-cols-2">
+      <div className="grid gap-6 lg:grid-cols-2">
 
         <VerificationStatus />
 
@@ -26,17 +24,13 @@ export default function DashboardPage() {
 
       </div>
 
-      {/* ACTIVITY ROW */}
-
-      <div className="grid gap-6 xl:grid-cols-2">
+      <div className="grid gap-6 lg:grid-cols-2">
 
         <ActivityLogs />
 
         <AuditActivity />
 
       </div>
-
-      {/* ACTIONS */}
 
       <div className="grid gap-6 lg:grid-cols-2">
 

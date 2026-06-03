@@ -13,8 +13,22 @@ export default function MobileTopbar({
   setOpen,
 }: Props) {
   return (
-    <header className="flex items-center justify-between border-b border-[#DCE3EC] bg-white px-4 py-4 xl:hidden">
-
+<header
+  className="
+    sticky
+    top-0
+    z-40
+    flex
+    h-16
+    items-center
+    justify-between
+    border-b
+    border-[#DCE3EC]
+    bg-white
+    px-4
+    xl:hidden
+  "
+>
       {/* LEFT */}
 
       <div className="flex items-center gap-3">

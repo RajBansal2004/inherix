@@ -61,32 +61,32 @@ export default function RecordsPage() {
 
       <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
 
-  <div>
+        <div>
 
-    <span className="inline-flex rounded-full bg-[#EEF4FF] px-3 py-1 text-xs font-medium text-[#163B8C]">
-      Secure Family Vault
-    </span>
+          <span className="inline-flex rounded-full bg-[#EEF4FF] px-3 py-1 text-xs font-medium text-[#163B8C]">
+            Secure Family Vault
+          </span>
 
-    <h1 className="mt-4 text-[40px] font-semibold tracking-tight text-[#0F172A]">
-      Continuity Records
-    </h1>
+          <h1 className="mt-4 text-[40px] font-semibold tracking-tight text-[#0F172A]">
+            Continuity Records
+          </h1>
 
-    <p className="mt-3 max-w-[750px] text-slate-500 leading-7">
-      Protect important records that help your family navigate
-      difficult situations and preserve your legacy for future generations.
-    </p>
+          <p className="mt-3 max-w-[750px] text-slate-500 leading-7">
+            Protect important records that help your family navigate
+            difficult situations and preserve your legacy for future generations.
+          </p>
 
-  </div>
+        </div>
 
-  <button
-    onClick={() => setOpen(true)}
-    className="flex h-14 items-center gap-2 rounded-2xl bg-[#163B8C] px-6 text-sm font-medium text-white shadow-lg shadow-blue-100 transition hover:scale-[1.02]"
-  >
-    <Plus className="h-4 w-4" />
-    Add New Record
-  </button>
+        <button
+          onClick={() => setOpen(true)}
+          className="flex h-14 items-center gap-2 rounded-2xl bg-[#163B8C] px-6 text-sm font-medium text-white shadow-lg shadow-blue-100 transition hover:scale-[1.02]"
+        >
+          <Plus className="h-4 w-4" />
+          Add New Record
+        </button>
 
-</div>
+      </div>
 
 
 
@@ -125,82 +125,82 @@ export default function RecordsPage() {
           return (
 
             <Link
-  key={item.slug}
-  href={`/dashboard/records/category/${item.slug}`}
-  className="group rounded-[30px] border border-[#DCE3EC] bg-white p-6 transition-all duration-300 hover:border-[#163B8C] hover:shadow-lg"
->
+              key={item.slug}
+              href={`/dashboard/records/category/${item.slug}`}
+              className="group rounded-[30px] border border-[#DCE3EC] bg-white p-6 transition-all duration-300 hover:border-[#163B8C] hover:shadow-lg"
+            >
 
-  <div className="flex items-center justify-between">
+              <div className="flex items-center justify-between">
 
-    {/* LEFT */}
+                {/* LEFT */}
 
-    <div className="flex items-center gap-5">
+                <div className="flex items-center gap-5">
 
-      <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-3xl bg-[#EEF4FF]">
+                  <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-3xl bg-[#EEF4FF]">
 
-        <Icon className="h-7 w-7 text-[#163B8C]" />
+                    <Icon className="h-7 w-7 text-[#163B8C]" />
 
-      </div>
+                  </div>
 
-      <div>
+                  <div>
 
-        <h3 className="text-[18px] font-semibold text-[#0F172A]">
-          {item.title}
-        </h3>
+                    <h3 className="text-[18px] font-semibold text-[#0F172A]">
+                      {item.title}
+                    </h3>
 
-        <p className="mt-1 text-sm text-slate-500">
-          {item.count}
-        </p>
+                    <p className="mt-1 text-sm text-slate-500">
+                      {item.count}
+                    </p>
 
-        <div className="mt-3 flex items-center gap-2">
+                    <div className="mt-3 flex items-center gap-2">
 
-          <span className="rounded-full bg-emerald-100 px-2.5 py-1 text-[11px] font-medium text-emerald-700">
-            Verified
-          </span>
+                      <span className="rounded-full bg-emerald-100 px-2.5 py-1 text-[11px] font-medium text-emerald-700">
+                        Verified
+                      </span>
 
-          <span className="rounded-full bg-[#EEF4FF] px-2.5 py-1 text-[11px] font-medium text-[#163B8C]">
-            Protected
-          </span>
+                      <span className="rounded-full bg-[#EEF4FF] px-2.5 py-1 text-[11px] font-medium text-[#163B8C]">
+                        Protected
+                      </span>
 
-        </div>
+                    </div>
 
-      </div>
+                  </div>
 
-    </div>
+                </div>
 
-    {/* RIGHT */}
+                {/* RIGHT */}
 
-    <div className="flex flex-col items-end">
+                <div className="flex flex-col items-end">
 
-      <ChevronRight className="h-5 w-5 text-slate-400 transition group-hover:text-[#163B8C]" />
+                  <ChevronRight className="h-5 w-5 text-slate-400 transition group-hover:text-[#163B8C]" />
 
-      <span className="mt-8 text-xs text-slate-400">
-        View
-      </span>
+                  <span className="mt-8 text-xs text-slate-400">
+                    View
+                  </span>
 
-    </div>
+                </div>
 
-  </div>
+              </div>
 
-  {/* BOTTOM */}
+              {/* BOTTOM */}
 
-  <div className="mt-5 border-t border-[#EEF2F7] pt-4">
+              <div className="mt-5 border-t border-[#EEF2F7] pt-4">
 
-    <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between">
 
-      <p className="text-xs text-slate-400">
-        Last Updated
-      </p>
+                  <p className="text-xs text-slate-400">
+                    Last Updated
+                  </p>
 
-      <p className="text-xs font-medium text-[#163B8C]">
-        Today
-      </p>
+                  <p className="text-xs font-medium text-[#163B8C]">
+                    Today
+                  </p>
 
-    </div>
+                </div>
 
-  </div>
+              </div>
 
-</Link>
+            </Link>
 
           );
         })}

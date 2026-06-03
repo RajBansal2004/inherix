@@ -13,47 +13,43 @@ interface Props {
 export default function DashboardLayout({
   children,
 }: Props) {
-
   const [open, setOpen] = useState(false);
 
   return (
-    <main className="flex h-screen overflow-hidden bg-[#F5F7FB]">
+    <div className="min-h-screen bg-[#F5F7FB]">
 
-      {/* DESKTOP SIDEBAR */}
+      <div className="flex">
 
-      <div className="hidden xl:block">
+        {/* Desktop Sidebar */}
 
-        <Sidebar />
+        <div className="hidden xl:block">
+          <Sidebar />
+        </div>
 
-      </div>
+        {/* Mobile Sidebar */}
 
-      {/* MOBILE SIDEBAR */}
-
-      <MobileSidebar
-        open={open}
-        setOpen={setOpen}
-      />
-
-      {/* CONTENT */}
-
-      <section className="flex flex-1 flex-col overflow-hidden">
-
-        {/* MOBILE TOPBAR */}
-
-        <MobileTopbar
+        <MobileSidebar
+          open={open}
           setOpen={setOpen}
         />
 
-        {/* PAGE */}
+        {/* Content */}
 
-        <div className="flex-1 overflow-y-auto p-4 sm:p-5 lg:p-6">
+        <div className="flex min-w-0 flex-1 flex-col">
 
-          {children}
+          <MobileTopbar
+            setOpen={setOpen}
+          />
+
+          <div className="w-full p-4 sm:mb-0 md:mb-140 lg:mb-200 mb-80 xl:mb-0">
+
+            {children}
+          </div>
 
         </div>
 
-      </section>
+      </div>
 
-    </main>
+    </div>
   );
 }
