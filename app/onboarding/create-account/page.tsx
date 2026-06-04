@@ -7,14 +7,8 @@ export default function CreateAccountScreen() {
   return (
     <DeviceFrame>
 
-      <div className="flex flex-1 flex-col justify-between px-8 py-8">
-
-        {/* TOP */}
-
+      <div className="flex flex-1 flex-col px-8">
         <div>
-
-          {/* LOGO */}
-
           <div className="flex justify-center">
 
             <Image
@@ -26,8 +20,6 @@ export default function CreateAccountScreen() {
             />
 
           </div>
-
-          {/* TITLE */}
 
           <div className="text-center">
 
@@ -45,7 +37,6 @@ export default function CreateAccountScreen() {
 
           </div>
 
-          {/* FORM */}
 
           <div className="mt-4 space-y-4">
 
@@ -73,7 +64,6 @@ export default function CreateAccountScreen() {
 
           </div>
 
-          {/* TERMS */}
 
           <div className="mt-4 flex gap-3">
 
@@ -97,11 +87,10 @@ export default function CreateAccountScreen() {
 
         </div>
 
-        {/* BUTTON */}
 
         <Link href="/onboarding/verify-email">
 
-          <button className=" mt-2 h-14 w-full rounded-2xl bg-[#163B8C] text-[16px] font-medium text-white hover:bg-[#1D4ED8]">
+          <button className=" mt-2 mb-4 h-14 w-full rounded-2xl bg-[#163B8C] text-[16px] font-medium text-white hover:bg-[#1D4ED8]">
 
             Create Account
 

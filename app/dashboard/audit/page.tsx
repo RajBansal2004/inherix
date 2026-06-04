@@ -53,9 +53,6 @@ const logs = [
 export default function AuditLogsPage() {
   return (
     <div className="space-y-6">
-
-      {/* PAGE HEADER */}
-
       <div className="rounded-[32px] border border-[#DCE3EC] bg-white p-6 lg:p-8">
 
         <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
@@ -98,9 +95,6 @@ export default function AuditLogsPage() {
         </div>
 
       </div>
-
-      {/* FILTERS */}
-
       <div className="rounded-[28px] border border-[#DCE3EC] bg-white p-5">
 
         <div className="flex flex-col gap-4 lg:flex-row">
@@ -123,9 +117,6 @@ export default function AuditLogsPage() {
         </div>
 
       </div>
-
-      {/* TIMELINE */}
-
       <div className="rounded-[32px] border border-[#DCE3EC] bg-white p-6">
 
         <h2 className="text-xl font-semibold text-[#0F172A]">
@@ -176,9 +167,6 @@ export default function AuditLogsPage() {
         </div>
 
       </div>
-
-      {/* SUMMARY */}
-
       <div className="grid gap-5 md:grid-cols-3">
 
         <div className="rounded-[28px] border border-[#DCE3EC] bg-white p-5">

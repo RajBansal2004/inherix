@@ -36,14 +36,8 @@ export default function WhatsNextScreen() {
   return (
     <DeviceFrame>
 
-      <div className="flex flex-1 flex-col justify-between px-8 py-10">
-
-        {/* TOP */}
-
+      <div className="flex flex-1 flex-col justify-between px-8 py-5">
         <div>
-
-          {/* ICON */}
-
           <div className="flex justify-center">
 
             <div className="flex h-24 w-24 items-center justify-center rounded-[28px] border border-[#DCE3EC] bg-[#EEF4FF]">
@@ -53,9 +47,6 @@ export default function WhatsNextScreen() {
             </div>
 
           </div>
-
-          {/* TITLE */}
-
           <div className="mt-2 text-center">
 
             <h1 className="text-[34px] font-semibold tracking-tight text-[#0F172A]">
@@ -72,9 +63,6 @@ export default function WhatsNextScreen() {
             </p>
 
           </div>
-
-          {/* LIST */}
-
           <div className="mt-2 space-y-4">
 
             {steps.map((step) => {
@@ -105,9 +93,6 @@ export default function WhatsNextScreen() {
           </div>
 
         </div>
-
-        {/* BUTTON */}
-
         <Link href="/dashboard">
 
           <button className=" mt-4 h-14 w-full rounded-2xl bg-[#163B8C] text-[16px] font-medium text-white transition hover:bg-[#1D4ED8]">

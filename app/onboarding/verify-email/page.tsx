@@ -11,8 +11,6 @@ export default function VerifyEmailScreen() {
 
       <div className="flex flex-1 flex-col justify-between px-8 py-10">
 
-        {/* CONTENT */}
-
         <div className="flex flex-1 flex-col items-center justify-center">
 
           <div className="flex h-28 w-28 items-center justify-center rounded-[28px] border border-[#DCE3EC]">
@@ -36,7 +34,6 @@ export default function VerifyEmailScreen() {
 
         </div>
 
-        {/* BUTTONS */}
 
         <div>
 

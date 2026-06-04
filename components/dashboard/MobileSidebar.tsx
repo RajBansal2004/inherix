@@ -145,8 +145,8 @@ export default function MobileSidebar({
         />
       )}
 
- <aside
-  className={`
+      <aside
+        className={`
     fixed
     top-0
     left-0
@@ -165,8 +165,7 @@ export default function MobileSidebar({
     xl:hidden
     ${open ? "translate-x-0" : "-translate-x-full"}
   `}
->
-        {/* HEADER */}
+      >
 
         <div className="shrink-0 border-b border-[#E8EEF5] px-5 py-4">
           <div className="flex items-start justify-between">
@@ -196,10 +195,8 @@ export default function MobileSidebar({
 
         </div>
 
-        {/* MENU */}
-
- <div
-  className="
+        <div
+          className="
     flex-1
     min-h-0
     overflow-y-auto
@@ -207,10 +204,8 @@ export default function MobileSidebar({
     px-4
     py-3
   "
->
-  <div className="space-y-2  pb-40">
-
-            {/* MY RECORDS */}
+        >
+          <div className="space-y-2  pb-40">
 
             <div>
 
@@ -224,8 +219,6 @@ export default function MobileSidebar({
 
             </div>
 
-            {/* ACCESS */}
-
             <div>
 
               <p className="mb-2 px-3 text-[11px] font-semibold tracking-wider text-slate-400">
@@ -237,9 +230,6 @@ export default function MobileSidebar({
               </div>
 
             </div>
-
-            {/* COMPLIANCE */}
-
             <div>
 
               <p className="mb-2 px-3 text-[11px] font-semibold tracking-wider text-slate-400">
@@ -251,8 +241,6 @@ export default function MobileSidebar({
               </div>
 
             </div>
-
-            {/* ACCOUNT */}
 
             <div>
 
@@ -272,9 +260,9 @@ export default function MobileSidebar({
 
         {/* PROFILE */}
 
-        <div className=" border-t border-[#E8EEF5] bg-white p-4 shrink-0"   >  
-          
-                  <button className="flex w-full items-center gap-3 rounded-2xl border border-[#DCE3EC] bg-[#FAFBFC] px-3 py-3">
+        <div className=" border-t border-[#E8EEF5] bg-white p-4 shrink-0"   >
+
+          <button className="flex w-full items-center gap-3 rounded-2xl border border-[#DCE3EC] bg-[#FAFBFC] px-3 py-3">
 
             <div className="relative">
 

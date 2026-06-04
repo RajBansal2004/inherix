@@ -32,9 +32,6 @@ export default function AccessPage() {
 
   return (
     <div className="mx-auto w-full max-w-[980px] space-y-6">
-
-      {/* HEADER */}
-
       <div>
 
         <h1 className="text-[30px] font-semibold tracking-tight text-[#0F172A] md:text-[36px]">
@@ -46,9 +43,6 @@ export default function AccessPage() {
         </p>
 
       </div>
-
-      {/* CARD */}
-
       <div className="rounded-[32px] border border-[#DCE3EC] bg-white p-5 md:p-8">
 
         <div className="space-y-4">

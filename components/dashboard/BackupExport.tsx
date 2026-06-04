@@ -3,9 +3,6 @@ export default function BackupExport() {
     <div className="rounded-[28px] border border-[#E2E8F0] bg-white p-7">
 
       <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-center">
-
-        {/* LEFT */}
-
         <div>
 
           <h2 className="text-[24px] font-semibold tracking-tight text-[#0F172A]">
@@ -22,8 +19,6 @@ export default function BackupExport() {
           </p>
 
         </div>
-
-        {/* BUTTONS */}
 
         <div className="flex flex-wrap gap-4">
 

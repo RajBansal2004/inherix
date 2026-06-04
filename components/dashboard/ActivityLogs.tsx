@@ -25,8 +25,6 @@ export default function ActivityLogs() {
   return (
     <div className="rounded-[28px] border border-[#E2E8F0] bg-white p-7">
 
-      {/* HEADER */}
-
       <div className="flex items-center justify-between">
 
         <div>
@@ -52,8 +50,6 @@ export default function ActivityLogs() {
         </button>
 
       </div>
-
-      {/* LOGS */}
 
       <div className="mt-8 space-y-5">
 

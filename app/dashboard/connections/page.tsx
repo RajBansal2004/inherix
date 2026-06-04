@@ -34,9 +34,6 @@ const connections = [
 export default function ConnectionsPage() {
   return (
     <div className="mx-auto w-full max-w-[1100px] space-y-6">
-
-      {/* HEADER */}
-
       <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
 
         <div>
@@ -63,9 +60,6 @@ export default function ConnectionsPage() {
         </Link>
 
       </div>
-
-      {/* STATS */}
-
       <div className="grid gap-4 sm:grid-cols-3">
 
         <div className="rounded-[28px] border border-[#DCE3EC] bg-white p-5">
@@ -123,9 +117,6 @@ export default function ConnectionsPage() {
         </div>
 
       </div>
-
-      {/* LIST */}
-
       <div className="space-y-4">
 
         {connections.map((item) => (
@@ -134,9 +125,6 @@ export default function ConnectionsPage() {
             href={`/dashboard/connections/${item.id}`}
             className="group flex flex-col gap-5 rounded-[30px] border border-[#DCE3EC] bg-white p-5 transition hover:border-[#163B8C] hover:bg-[#F8FBFF] md:flex-row md:items-center md:justify-between md:p-6"
           >
-
-            {/* LEFT */}
-
             <div className="flex items-center gap-4">
 
               <div className="flex h-16 w-16 items-center justify-center rounded-full bg-[#EEF4FF] text-lg font-semibold text-[#163B8C]">
@@ -167,9 +155,6 @@ export default function ConnectionsPage() {
               </div>
 
             </div>
-
-            {/* RIGHT */}
-
             <div className="flex items-center justify-between md:justify-end md:gap-4">
 
               <p className="text-sm text-slate-400">

@@ -6,11 +6,9 @@ export default function DeviceFrame({
   children,
 }: Props) {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#F8FAFC] p-6">
+    <main className="flex min-h-screen items-center justify-center bg-[#F8FAFC] p-4 sm:p-6">
 
-      {/* DEVICE */}
-
-      <div className="relative flex h-[620px] w-full max-w-[420px] flex-col overflow-hidden rounded-[12px] border-2 border-slate-300 bg-white">
+      <div className="relative w-full max-w-[420px] rounded-[12px] border-2 border-slate-300 bg-white shadow-sm">
 
         {children}
 

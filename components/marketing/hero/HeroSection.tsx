@@ -10,21 +10,13 @@ export default function HeroSection() {
   return (
     <section className="relative overflow-hidden bg-white pt-36">
 
-      {/* BACKGROUND */}
-
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(99,102,241,0.08),transparent_40%)]" />
-
-      {/* CONTAINER */}
 
       <div className="relative mx-auto max-w-7xl px-6">
 
         <div className="grid items-center gap-20 lg:grid-cols-2">
 
-          {/* LEFT */}
-
           <div>
-
-            {/* BADGE */}
 
             <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-slate-200 bg-slate-50 px-5 py-2">
 
@@ -38,8 +30,6 @@ export default function HeroSection() {
 
             </div>
 
-            {/* HEADING */}
-
             <h1 className="max-w-3xl text-5xl font-semibold leading-[1.02] tracking-tight text-slate-900 sm:text-6xl lg:text-7xl">
 
               Secure your family’s
@@ -52,8 +42,6 @@ export default function HeroSection() {
 
             </h1>
 
-            {/* DESCRIPTION */}
-
             <p className="mt-8 max-w-2xl text-lg leading-9 text-slate-600">
 
               INHERIX helps families organize critical information,
@@ -61,8 +49,6 @@ export default function HeroSection() {
               verification-oriented workflows and governance-driven systems.
 
             </p>
-
-            {/* BUTTONS */}
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
 
@@ -85,8 +71,6 @@ export default function HeroSection() {
               </Button>
 
             </div>
-
-            {/* TRUST ITEMS */}
 
             <div className="mt-12 grid gap-4 sm:grid-cols-3">
 
@@ -142,16 +126,10 @@ export default function HeroSection() {
 
           </div>
 
-          {/* RIGHT SIDE */}
 
           <div className="relative">
 
-            {/* MAIN CARD */}
-
             <div className="overflow-hidden rounded-[40px] border border-slate-200 bg-white shadow-[0_30px_80px_rgba(15,23,42,0.08)]">
-
-              {/* TOP */}
-
               <div className="flex items-center justify-between border-b border-slate-100 px-8 py-6">
 
                 <div>
@@ -181,13 +159,7 @@ export default function HeroSection() {
                 </div>
 
               </div>
-
-              {/* BODY */}
-
               <div className="space-y-6 p-8">
-
-                {/* SCORE */}
-
                 <div className="rounded-3xl bg-gradient-to-br from-[#0B1220] to-[#111827] p-7 text-white">
 
                   <div className="flex items-center justify-between">
@@ -231,8 +203,6 @@ export default function HeroSection() {
                   </div>
 
                 </div>
-
-                {/* GRID */}
 
                 <div className="grid grid-cols-2 gap-4">
 

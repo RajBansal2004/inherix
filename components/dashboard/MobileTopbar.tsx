@@ -29,8 +29,6 @@ export default function MobileTopbar({
     xl:hidden
   "
 >
-      {/* LEFT */}
-
       <div className="flex items-center gap-3">
 
         <button
@@ -53,8 +51,6 @@ export default function MobileTopbar({
         </div>
 
       </div>
-
-      {/* RIGHT */}
 
       <button className="flex h-10 w-10 items-center justify-center rounded-xl border border-[#DCE3EC] bg-white">
 

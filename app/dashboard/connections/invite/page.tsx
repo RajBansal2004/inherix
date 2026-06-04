@@ -8,9 +8,6 @@ import {
 export default function InviteConnectionPage() {
   return (
     <div className="mx-auto w-full max-w-[960px] space-y-6">
-
-      {/* HEADER */}
-
       <div className="flex items-start justify-between gap-4">
 
         <div>
@@ -37,15 +34,9 @@ export default function InviteConnectionPage() {
         </div>
 
       </div>
-
-      {/* FORM */}
-
       <div className="rounded-[32px] border border-[#DCE3EC] bg-white p-5 md:p-8">
 
         <div className="grid gap-6 md:grid-cols-2">
-
-          {/* EMAIL */}
-
           <div>
 
             <label className="mb-2 block text-sm font-medium text-[#0F172A]">
@@ -59,9 +50,6 @@ export default function InviteConnectionPage() {
             />
 
           </div>
-
-          {/* FULL NAME */}
-
           <div>
 
             <label className="mb-2 block text-sm font-medium text-[#0F172A]">
@@ -79,9 +67,6 @@ export default function InviteConnectionPage() {
         </div>
 
         <div className="mt-6 grid gap-6 md:grid-cols-2">
-
-          {/* RELATION */}
-
           <div>
 
             <label className="mb-2 block text-sm font-medium text-[#0F172A]">
@@ -105,9 +90,6 @@ export default function InviteConnectionPage() {
             </select>
 
           </div>
-
-          {/* ACCESS */}
-
           <div>
 
             <label className="mb-2 block text-sm font-medium text-[#0F172A]">
@@ -129,9 +111,6 @@ export default function InviteConnectionPage() {
           </div>
 
         </div>
-
-        {/* BUTTON */}
-
         <button className="mt-8 flex h-14 w-full items-center justify-center gap-2 rounded-2xl bg-[#163B8C] text-sm font-medium text-white transition hover:bg-[#102C6B]">
 
           <Send className="h-4 w-4" />

@@ -26,8 +26,6 @@ export default function Navbar() {
 
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
 
-        {/* LOGO */}
-
         <Link
           href="/"
           className="flex items-center gap-3"
@@ -58,9 +56,6 @@ export default function Navbar() {
           </div>
 
         </Link>
-
-        {/* DESKTOP MENU */}
-
         <nav className="hidden items-center gap-10 lg:flex">
 
           {links.map((link) => (
@@ -74,9 +69,6 @@ export default function Navbar() {
           ))}
 
         </nav>
-
-        {/* DESKTOP BUTTONS */}
-
         <div className="hidden items-center gap-3 lg:flex">
 
           <Button
@@ -94,9 +86,6 @@ export default function Navbar() {
           </Button>
 
         </div>
-
-        {/* MOBILE BUTTON */}
-
         <button
           onClick={() => setOpen(!open)}
           className="flex h-11 w-11 items-center justify-center rounded-2xl border border-slate-200 bg-white lg:hidden"
@@ -111,8 +100,6 @@ export default function Navbar() {
         </button>
 
       </div>
-
-      {/* MOBILE MENU */}
 
       {open && (
         <div className="border-t border-slate-200 bg-white lg:hidden">

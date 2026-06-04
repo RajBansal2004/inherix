@@ -6,62 +6,79 @@ import DeviceFrame from "@/components/onboarding/DeviceFrame";
 export default function WelcomeScreen() {
   return (
     <DeviceFrame>
+      <div className="flex min-h-full flex-col px-6 py-3 sm:px-8 sm:py-3">
 
-      {/* CONTENT */}
+        <div className="flex flex-col items-center">
 
-      <div className="flex flex-1 flex-col px-8 py-10">
+          <Image
+            src="/logo.png"
+            alt="INHERIX"
+            width={110}
+            height={110}
+            className="h-auto w-[90px] sm:w-[110px] object-contain"
+            priority
+          />
 
-  {/* TOP */}
-  <div className="flex flex-col items-center">
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
 
-    <Image
-      src="/logo.png"
-      alt="INHERIX"
-      width={120}
-      height={120}
-      className="object-contain"
-    />
+            <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">
+              Secure
+            </span>
 
-    <div className="mt-4 text-center">
+            <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
+              Verified
+            </span>
 
-      <h1 className="text-[38px] font-semibold leading-[48px] tracking-tight text-[#0F172A]">
-        Welcome to
-        <br />
-        INHERIX
-      </h1>
+            <span className="rounded-full bg-violet-100 px-3 py-1 text-xs font-medium text-violet-700">
+              Protected
+            </span>
 
-      <p className="mt-6 text-[18px] leading-7 text-[#64748B]">
-        Plan today.
-        <br />
-        Protect tomorrow.
-        <br />
-        Empower forever.
-      </p>
+          </div>
+          <div className="mt-5 text-center">
 
-    </div>
+            <h1 className="text-[30px] font-semibold leading-tight tracking-tight text-[#0F172A] sm:text-[38px] sm:leading-[48px]">
+              Welcome to
+              <br />
+              INHERIX
+            </h1>
+          </div>
 
-  </div>
+          <p className="mt-6 max-w-[280px] text-center text-sm leading-6 text-slate-500">
+            Secure your family's digital continuity, trusted advisors,
+            beneficiaries, and important records in one protected place.
+          </p>
 
-  {/* BOTTOM */}
-  <div className="mt-10">
+        </div>
 
-    <Link href="/onboarding/create-account">
-      <button className="h-14 w-full rounded-2xl bg-[#163B8C] text-[16px] font-medium text-white transition hover:bg-[#1D4ED8]">
-        Get Started
-      </button>
-    </Link>
+        {/* BUTTONS */}
 
-    <button className="mt-6 w-full text-[15px] font-medium text-[#64748B]">
-      Already have an account?
-      <span className="ml-1 text-[#163B8C]">
-        Log in
-      </span>
-    </button>
+        <div className="mt-6">
 
-  </div>
+          <Link href="/onboarding/create-account">
 
-</div>
+            <button className="h-14 w-full rounded-2xl bg-[#163B8C] text-[16px] font-medium text-white transition hover:bg-[#1D4ED8]">
+              Get Started
+            </button>
 
+          </Link>
+
+          <Link href="/onboarding/login">
+
+            <button className="mt-5 w-full text-[15px] font-medium text-[#64748B]">
+
+              Already have an account?
+
+              <span className="ml-1 text-[#163B8C]">
+                Log in
+              </span>
+
+            </button>
+
+          </Link>
+
+        </div>
+
+      </div>
     </DeviceFrame>
   );
 }

@@ -19,21 +19,13 @@ export default function DashboardLayout({
     <div className="min-h-screen bg-[#F5F7FB]">
 
       <div className="flex">
-
-        {/* Desktop Sidebar */}
-
         <div className="hidden xl:block">
           <Sidebar />
         </div>
-
-        {/* Mobile Sidebar */}
-
         <MobileSidebar
           open={open}
           setOpen={setOpen}
         />
-
-        {/* Content */}
 
         <div className="flex min-w-0 flex-1 flex-col">
 

@@ -50,8 +50,6 @@ export default function OverviewCards() {
             className="group relative overflow-hidden rounded-[30px] border border-[#DCE3EC] bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#163B8C] hover:shadow-xl"
           >
 
-            {/* TOP */}
-
             <div className="flex items-start justify-between">
 
               <div
@@ -63,8 +61,6 @@ export default function OverviewCards() {
               <ArrowUpRight className="h-5 w-5 text-slate-300 transition group-hover:text-[#163B8C]" />
 
             </div>
-
-            {/* CONTENT */}
 
             <div className="mt-5">
 
@@ -84,8 +80,6 @@ export default function OverviewCards() {
 
             </div>
 
-            {/* BOTTOM */}
-
             <div className="mt-6 flex items-center justify-between">
 
               <span className="rounded-full bg-[#F8FAFC] px-3 py-1 text-xs font-medium text-slate-600">
@@ -97,8 +91,6 @@ export default function OverviewCards() {
               </span>
 
             </div>
-
-            {/* HOVER EFFECT */}
 
             <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-[#EEF4FF] opacity-0 transition-all duration-300 group-hover:opacity-100" />
 

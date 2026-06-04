@@ -12,7 +12,6 @@ export default function TriggerRequestPage() {
   return (
     <div className="mx-auto w-full max-w-[1100px] space-y-8">
 
-      {/* HEADER */}
 
     {/* HEADER */}
 
