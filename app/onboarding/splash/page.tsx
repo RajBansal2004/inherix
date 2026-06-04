@@ -21,7 +21,7 @@ export default function SplashScreen() {
 
           </div>
 
-          <div className="mt-4 flex items-center gap-1">
+          <div className="mt-4 flex items-center">
 
             <Image
               src="/logo.png"
