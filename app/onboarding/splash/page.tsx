@@ -11,8 +11,7 @@ export default function SplashScreen() {
 
       <div className="relative w-full max-w-[390px] rounded-[18px] border border-slate-300 bg-white shadow-sm">
 
-        <div className="flex flex-col items-center px-6 pt-8 pb-28 sm:px-8">
-
+        <div className="flex flex-col items-center px-6 pt-8 pb-22 sm:px-8">
           <div className="rounded-full bg-[#EEF4FF] px-4 py-2">
 
             <p className="text-center text-sm font-medium text-[#163B8C] sm:text-base">
@@ -38,7 +37,7 @@ export default function SplashScreen() {
 
           </div>
           <p className="text-center text-sm font-medium text-slate-600">
-            Secure Today. Continue Tomorrow.
+            Helping families organize continuity information securely
           </p>
 
           <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
@@ -58,7 +57,7 @@ export default function SplashScreen() {
               <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />
 
               <span className="text-[11px] font-medium text-emerald-700 sm:text-xs">
-                Verified Access
+                Controlled Access
               </span>
 
             </div>
@@ -68,7 +67,7 @@ export default function SplashScreen() {
               <FileCheck className="h-3.5 w-3.5 text-violet-600" />
 
               <span className="text-[11px] font-medium text-violet-700 sm:text-xs">
-                Emergency Release
+               Structured Release Process
               </span>
 
             </div>
@@ -103,7 +102,7 @@ export default function SplashScreen() {
           <Link href="/onboarding/welcome">
 
             <button className="h-14 w-full rounded-2xl bg-[#163B8C] text-sm font-semibold text-white transition hover:bg-[#1D4ED8]">
-              Continue
+              Start Your Continuity Plan
             </button>
 
           </Link>
