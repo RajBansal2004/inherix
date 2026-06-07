@@ -1,5 +1,6 @@
 import {
   Bell,
+  FolderOpen,
   HelpCircle,
   ShieldCheck,
 } from "lucide-react";
@@ -24,9 +25,9 @@ export default function TopHeader() {
 
           <h1 className="text-[34px] font-semibold tracking-tight text-[#0F172A]">
 
-          Welcome Mr. Amit Tyagi
+            Welcome !
 
-        </h1>
+          </h1>
 
           <p className="mt-3 text-[15px] text-slate-500">
 
@@ -42,15 +43,29 @@ export default function TopHeader() {
 
         <div className="flex items-center gap-3">
 
-          <div className="rounded-2xl border border-[#DCE3EC] bg-[#F8FAFC] px-5 py-3">
+          <div className="rounded-2xl border border-[#E8EDF5] bg-[#F8FAFC] px-4 py-3">
 
-            <p className="text-xs text-slate-500">
-              Overall Status
-            </p>
+            <div className="flex items-start gap-2">
 
-            <h3 className="mt-1 text-sm font-semibold text-emerald-600">
-              Secure
-            </h3>
+              <div className="mt-0.5">
+
+                <FolderOpen className="h-4 w-4 text-[#E8B24A]" />
+
+              </div>
+
+              <div>
+
+                <p className="text-[12px] font-medium text-[#7B8794]">
+                  Plan Status
+                </p>
+
+                <h3 className="mt-0.5 text-[15px] font-semibold text-[#F0B429]">
+                  In Progress
+                </h3>
+
+              </div>
+
+            </div>
 
           </div>
 

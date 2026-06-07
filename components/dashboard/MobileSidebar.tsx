@@ -45,14 +45,9 @@ const recordMenus = [
 
 const continuityMenus = [
   {
-    title: "Trusted Advisors",
+    title: "Trusted Access",
     href: "/dashboard/professionals",
     icon: Briefcase,
-  },
-  {
-    title: "Emergency Access",
-    href: "/dashboard/emergency",
-    icon: ShieldCheck,
   },
   {
     title: "Emergency Activation",
@@ -69,18 +64,23 @@ const continuityMenus = [
     href: "/dashboard/verification",
     icon: ShieldCheck,
   },
+  {
+    title: "Emergency Access",
+    href: "/dashboard/emergency",
+    icon: ShieldCheck,
+  },
 ];
 
 const complianceMenus = [
   {
-    title: "Audit Logs",
-    href: "/dashboard/audit",
-    icon: History,
-  },
-  {
     title: "Security Centre",
     href: "/dashboard/security",
     icon: ShieldCheck,
+  },
+  {
+    title: "Audit Logs",
+    href: "/dashboard/audit",
+    icon: History,
   },
   {
     title: "Backup & Export",
@@ -179,8 +179,8 @@ export default function MobileSidebar({
                 </h1>
               </div>
 
-              <p className="text-[11px] text-slate-500">
-                Your Legacy. Their Future.
+              <p className="text-[11px] font-medium text-slate-500">
+                Digital Continuity Institution
               </p>
             </div>
 
@@ -210,7 +210,7 @@ export default function MobileSidebar({
             <div>
 
               <p className="mb-2 px-3 text-[11px] font-semibold tracking-wider text-slate-400">
-                MY RECORDS
+                CONTINUITY HUB
               </p>
 
               <div className="space-y-1">
@@ -233,7 +233,7 @@ export default function MobileSidebar({
             <div>
 
               <p className="mb-2 px-3 text-[11px] font-semibold tracking-wider text-slate-400">
-                COMPLIANCE
+                SECURITY & GOVERNANCE
               </p>
 
               <div className="space-y-1">

@@ -2,110 +2,185 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   Lock,
+  Users,
+  Shield,
+  Globe,
   ShieldCheck,
-  FileCheck,
+  ArrowRight,
+  Info,
 } from "lucide-react";
+
 export default function SplashScreen() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#F3F5F9] p-4">
+    <main className="flex min-h-screen items-center justify-center bg-[#F4F6FA] p-4">
 
-      <div className="relative w-full max-w-[390px] rounded-[18px] border border-slate-300 bg-white shadow-sm">
+      <div className="w-full max-w-[430px] overflow-hidden rounded-[24px] border border-[#E5E7EB] bg-white shadow-sm">
 
-        <div className="flex flex-col items-center px-6 pt-8 pb-22 sm:px-8">
-          <div className="rounded-full bg-[#EEF4FF] px-4 py-2">
+        <div className="px-6 pt-8 pb-8">
 
-            <p className="text-center text-sm font-medium text-[#163B8C] sm:text-base">
-              Plan Your Digital Continuity with
-            </p>
+          <div className="flex justify-center">
+
+            <div className="rounded-full bg-[#EEF3FF] px-6 py-3">
+
+              <p className="text-sm font-medium text-[#163B8C]">
+                Plan Your Family Continuity
+              </p>
+
+            </div>
 
           </div>
 
-          <div className="mt-4 flex items-center">
+
+          <div className="mt-4 flex items-center justify-center gap-1">
 
             <Image
               src="/logo.png"
-              alt="INHERIX"
-              width={85}
-              height={85}
-              className="h-[70px] w-[70px] object-contain sm:h-[85px] sm:w-[85px]"
+              alt="INHERIX Logo"
+              width={90}
+              height={90}
+              className="h-[72px] w-[72px] object-contain sm:h-[90px] sm:w-[90px]"
               priority
             />
 
-            <h1 className="text-[40px] font-bold tracking-tight text-[#111827] sm:text-[52px]">
+            <h1 className="text-[42px] font-extrabold leading-none tracking-tight text-[#0B1736] sm:text-[64px]">
               INHERIX
             </h1>
 
           </div>
-          <p className="text-center text-sm font-medium text-slate-600">
-            Helping families organize continuity information securely
+
+          <div className="flex items-center gap-4">
+
+            <div className="h-[1px] flex-1 bg-[#D3DDF0]" />
+
+            <p className="whitespace-nowrap text-[18px] font-semibold text-[#1483CD]">
+              Digital Continuity Institution
+            </p>
+
+            <div className="h-[1px] flex-1 bg-[#D3DDF0]" />
+
+          </div>
+
+          <div className="mt-2 text-center">
+
+            <p className="text-[16px] leading-6 text-[#374151]">
+
+              Secure important family information and ensure
+              controlled access{" "}
+
+              <span className="font-bold text-[#163B8C]">
+                when your family needs it most.
+              </span>
+
+            </p>
+
+          </div>
+
+          <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
+
+            <div className="flex items-center gap-2 rounded-2xl border border-[#E5E7EB] bg-[#FAFBFD] p-4 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+
+              <Lock className="h-6 w-6 shrink-0 text-[#163B8C]" />
+
+              <p className="text-sm font-semibold leading-5 text-[#163B8C]">
+                Secure
+                Records
+              </p>
+
+            </div>
+
+            <div className="flex items-center gap-2 rounded-2xl border border-[#E5E7EB] bg-[#FAFBFD] p-4 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+
+              <Users className="h-6 w-6 shrink-0 text-[#163B8C]" />
+
+              <p className="text-sm font-semibold leading-5 text-[#163B8C]">
+                Family
+                Access
+              </p>
+
+            </div>
+
+            <div className="flex items-center gap-2 rounded-2xl border border-[#E5E7EB] bg-[#FAFBFD] p-4 shadow-[0_1px_2px_rgba(0,0,0,0.04)]">
+
+              <Shield className="h-6 w-6 shrink-0 text-[#163B8C]" />
+
+              <p className="text-sm font-semibold leading-5 text-[#163B8C]">
+                Controlled
+                Release
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div className="mt-5 flex items-center gap-4">
+
+            <div className="h-[1px] flex-1 bg-[#E5E7EB]" />
+
+            <ShieldCheck className="h-5 w-5 text-[#C5CBD6]" />
+
+            <div className="h-[1px] flex-1 bg-[#E5E7EB]" />
+
+          </div>
+
+          <p className="mt-4 text-center text-[17px] leading-6 text-[#4B5563]">
+
+            Trusted process for organising continuity
+            information, instructions and important records.
+
           </p>
 
-          <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+          <div className="mt-3 border-t border-dashed border-[#D9DEE8] pt-6 text-center">
 
-            <div className="flex items-center gap-1 rounded-full border border-blue-100 bg-blue-50 px-3 py-1">
+            <div className="flex items-center justify-center gap-2">
 
-              <Lock className="h-3.5 w-3.5 text-[#163B8C]" />
+              <Globe className="h-5 w-5 text-[#5D8BFF]" />
 
-              <span className="text-[11px] font-medium text-[#163B8C] sm:text-xs">
-                Secure Records
+              <span className="text-[18px] font-bold text-[#163B8C]">
+                www.inherix.net
               </span>
 
             </div>
 
-            <div className="flex items-center gap-1 rounded-full border border-emerald-100 bg-emerald-50 px-3 py-1">
-
-              <ShieldCheck className="h-3.5 w-3.5 text-emerald-600" />
-
-              <span className="text-[11px] font-medium text-emerald-700 sm:text-xs">
-                Controlled Access
-              </span>
-
-            </div>
-
-            <div className="flex items-center gap-1 rounded-full border border-violet-100 bg-violet-50 px-3 py-1">
-
-              <FileCheck className="h-3.5 w-3.5 text-violet-600" />
-
-              <span className="text-[11px] font-medium text-violet-700 sm:text-xs">
-               Structured Release Process
-              </span>
-
-            </div>
-
-          </div>
-
-          <div className="mt-5 w-full border-y border-dashed border-slate-300 py-3">
-
-            <p className="text-center text-xs leading-6 text-[#6B7280] sm:text-sm">
-              INHERIX is not a legal advisor, bank, or insurance company.
-              It helps families organise continuity information securely.
-            </p>
-
-          </div>
-
-          <div className="mt-4 text-center">
-
-            <p className="text-base font-semibold text-[#111827] sm:text-lg">
-              www.inherix.net
-            </p>
-
-            <p className="mt-2 text-sm font-semibold text-[#163B8C] sm:text-base">
+            <p className="mt-2 text-[18px] font-bold text-[#163B8C]">
               Secure • Organise • Continue
             </p>
 
           </div>
 
-        </div>
-
-        <div className="absolute bottom-6 left-0 w-full px-6">
 
           <Link href="/onboarding/welcome">
 
-            <button className="h-14 w-full rounded-2xl bg-[#163B8C] text-sm font-semibold text-white transition hover:bg-[#1D4ED8]">
-              Start Your Continuity Plan
+            <button className="mt-6 flex h-[60px] w-full items-center justify-between rounded-2xl bg-[#163B8C] px-4 text-white transition hover:bg-[#1D4ED8]">
+
+              <ShieldCheck className="h-6 w-6 shrink-0" />
+
+              <span className="flex-1 text-center text-[17px] font-semibold">
+                Start Your Family Continuity Plan
+              </span>
+
+              <ArrowRight className="h-6 w-6 shrink-0" />
+
             </button>
 
           </Link>
+
+        </div>
+
+        <div className="border-t border-[#E5E7EB] bg-[#FAFAFA] px-6 py-5">
+
+          <div className="flex items-start gap-3">
+
+            <Info className="mt-1 h-5 w-5 shrink-0 text-slate-500" />
+
+            <p className="text-[13px] leading-6 text-[#6B7280]">
+
+              INHERIX is not a bank, legal advisor or insurance company.
+              It provides a structured continuity management platform.
+
+            </p>
+
+          </div>
 
         </div>
 

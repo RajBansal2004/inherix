@@ -55,7 +55,7 @@ export default function WhatsNextScreen() {
 
             </h1>
 
-            <p className=" text-[16px] leading-8 text-[#64748B]">
+            <p className=" text-[16px] leading-5 text-[#64748B]">
 
               Your continuity workspace is ready.
               Here’s what you can do next.

@@ -50,23 +50,27 @@ export default function OverviewCards() {
             className="group relative overflow-hidden rounded-[30px] border border-[#DCE3EC] bg-white p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#163B8C] hover:shadow-xl"
           >
 
-            <div className="flex items-start justify-between">
+            <div className="flex items-center justify-between">
 
-              <div
-                className={`flex h-12 w-12 items-center justify-center rounded-2xl ${card.color}`}
-              >
-                <Icon className="h-6 w-6" />
-              </div>
+  <div className="flex items-center gap-3">
 
-              <ArrowUpRight className="h-5 w-5 text-slate-300 transition group-hover:text-[#163B8C]" />
+    <div
+      className={`flex h-11 w-11 items-center justify-center rounded-xl ${card.color}`}
+    >
+      <Icon className="h-5 w-5" />
+    </div>
 
-            </div>
+    <p className="text-sm font-semibold text-[#0F172A]">
+      {card.title}
+    </p>
 
-            <div className="mt-5">
+  </div>
 
-              <p className="text-sm font-medium text-slate-500">
-                {card.title}
-              </p>
+  <ArrowUpRight className="h-5 w-5 text-slate-300 transition group-hover:text-[#163B8C]" />
+
+</div>
+
+            <div className="mt-3">
 
               <h2 className="mt-3 text-[36px] font-semibold tracking-tight text-[#0F172A]">
 

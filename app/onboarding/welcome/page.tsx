@@ -1,84 +1,135 @@
-import Image from "next/image";
 import Link from "next/link";
+import {
+  Lock,
+  Users,
+  Shield,
+  ShieldCheck,
+  ArrowRight,
+} from "lucide-react";
 
 import DeviceFrame from "@/components/onboarding/DeviceFrame";
+import BrandHeader from "@/components/onboarding/BrandHeader";
 
 export default function WelcomeScreen() {
   return (
     <DeviceFrame>
-      <div className="flex min-h-full flex-col px-6 py-3 sm:px-8 sm:py-3">
 
-        <div className="flex flex-col items-center">
+      <div className="px-6 py-6">
 
-          <Image
-            src="/logo.png"
-            alt="INHERIX"
-            width={110}
-            height={110}
-            className="h-auto w-[90px] sm:w-[110px] object-contain"
-            priority
-          />
+        <BrandHeader />
 
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
+        <div className="mt-4 rounded-2xl bg-[#F8FAFD] p-4">
 
-            <span className="rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">
-              Secure
-            </span>
+          <div className="grid grid-cols-3 divide-x divide-slate-200">
 
-            <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-700">
-              Verified
-            </span>
+            <div className="flex flex-col items-center">
 
-            <span className="rounded-full bg-violet-100 px-3 py-1 text-xs font-medium text-violet-700">
-              Protected
-            </span>
+              <Lock className="h-6 w-6 text-[#163B8C]" />
+
+              <p className="mt-2 text-center text-xs font-semibold">
+                Secure
+                <br />
+                Records
+              </p>
+
+            </div>
+
+            <div className="flex flex-col items-center">
+
+              <Users className="h-6 w-6 text-[#163B8C]" />
+
+              <p className="mt-2 text-center text-xs font-semibold">
+                Family
+                <br />
+                Access
+              </p>
+
+            </div>
+
+            <div className="flex flex-col items-center">
+
+              <Shield className="h-6 w-6 text-[#163B8C]" />
+
+              <p className="mt-2 text-center text-xs font-semibold">
+                Controlled
+                <br />
+                Release
+              </p>
+
+            </div>
 
           </div>
-          <div className="mt-5 text-center">
-
-            <h1 className="text-[30px] font-semibold leading-tight tracking-tight text-[#0F172A] sm:text-[38px] sm:leading-[48px]">
-              Welcome to
-              <br />
-              INHERIX
-            </h1>
-          </div>
-
-          <p className="mt-6 max-w-[280px] text-center text-sm leading-6 text-slate-500">
-            Secure your family's digital continuity, trusted advisors,
-            beneficiaries, and important records in one protected place.
-          </p>
 
         </div>
 
-        {/* BUTTONS */}
+        <h2 className="mt-5 text-center text-[26px] font-bold text-[#0F172A] leading-8 sm:text-[32px]">
+          Create Your Family Continuity Plan
+        </h2>
 
-        <div className="mt-6">
+        <p className="mt-4
+         text-center text-[15px] leading-5 text-[#64748B]">
+          Secure your family's digital continuity, trusted advisors,
+          beneficiaries, important records and continuity instructions
+          in one protected platform.
+        </p>
 
-          <Link href="/onboarding/create-account">
+        <Link href="/onboarding/create-account">
 
-            <button className="h-14 w-full rounded-2xl bg-[#163B8C] text-[16px] font-medium text-white transition hover:bg-[#1D4ED8]">
+          <button className="mt-5 flex h-[60px] w-full items-center justify-center gap-3 rounded-2xl bg-[#163B8C] text-white transition hover:bg-[#1D4ED8]">
+
+            <ShieldCheck className="h-5 w-5" />
+
+            <span className="font-semibold">
               Get Started
-            </button>
+            </span>
 
+            <ArrowRight className="h-5 w-5" />
+
+          </button>
+
+        </Link>
+
+        <div className="mt-3 text-center">
+
+          <span className="text-sm text-slate-500">
+            Already have an account?
+          </span>
+
+          <Link
+            href="/onboarding/login"
+            className="ml-1 text-sm font-medium text-[#2453A6] hover:underline"
+          >
+            Log In
           </Link>
 
-          <Link href="/onboarding/login">
+        </div>
 
-            <button className="mt-5 w-full text-[15px] font-medium text-[#64748B]">
+        <div className="mt-3 flex items-center gap-3">
 
-              Already have an account?
+          <div className="h-[1px] flex-1 bg-[#E5E7EB]" />
 
-              <span className="ml-1 text-[#163B8C]">
-                Log in
-              </span>
+          <ShieldCheck className="h-5 w-5 text-slate-400" />
 
-            </button>
+          <div className="h-[1px] flex-1 bg-[#E5E7EB]" />
 
-          </Link>
+        </div>
+
+        <div className="mt-2 rounded-2xl bg-[#F8FAFD] p-4">
+
+          <div className="flex items-center gap-3">
+
+            <ShieldCheck className="h-10 w-10 rounded-full bg-white p-2 text-[#163B8C]" />
+
+            <p className="text-sm leading-6 text-[#64748B]">
+              Your information is encrypted and accessible only through a structured release process.
+            </p>
+
+          </div>
 
         </div>
 
       </div>
+
     </DeviceFrame>
   );
 }
